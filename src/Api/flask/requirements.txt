@@ -1,0 +1,9 @@
+# /requirements.txt
+
+flask
+python-dotenv
+python-jose
+flask-cors
+six
+jose
+dotenv

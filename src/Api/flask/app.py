@@ -9,11 +9,11 @@ app = Flask(__name__)
 
 @app.route('/hash/<string:ptext>', methods=['GET'])
 def hello_world(ptext):
-    return jsonify(hashCode=hash_text(ptext)) 
+    return jsonify(hashCode=hash_text(ptext))
 
 
 def hash_text(plain_text):
-    hashedBytes = sha256(plain_text.encode()).digest()    
+    hashedBytes = sha256(plain_text.encode()).digest()
     encoded = base64.b64encode(hashedBytes)
     return encoded
 
