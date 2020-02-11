@@ -1,12 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "../assets/img/logo.svg";
 import "./App.scss";
 
 const time = new Date();
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="App container-fluid">
+      <div className="row">
+        <div className="col-sm-12"></div>
+      </div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
