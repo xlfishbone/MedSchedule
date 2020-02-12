@@ -13,8 +13,8 @@ def hello_world(ptext):
 
 
 def hash_text(plain_text):
-    hashedBytes = sha256(plain_text.encode()).digest()
-    encoded = base64.b64encode(hashedBytes)
+    hashed_bytes = sha256(plain_text.encode()).digest()
+    encoded = base64.b64encode(hashed_bytes)
     return encoded
 
 
