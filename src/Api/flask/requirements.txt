@@ -1,9 +1,8 @@
 # /requirements.txt
 
 flask
+flask-cors
+flask_sqlalchemy
 python-dotenv
 python-jose
-flask-cors
 six
-# jose
-# dotenv

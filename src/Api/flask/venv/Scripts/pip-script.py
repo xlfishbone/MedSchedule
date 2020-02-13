@@ -1,4 +1,4 @@
-#!C:\Users\beefz_000\PycharmProjects\untitled\venv\Scripts\python.exe
+#!D:\Development\Personal\src\MedSchedule\src\Api\flask\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip'
 __requires__ = 'pip==19.0.3'
 import re
