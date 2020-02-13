@@ -2,8 +2,6 @@ import React from "react";
 import logo from "../assets/img/logo.svg";
 import "./App.scss";
 
-const time = new Date();
-
 const App = () => {
   return (
     <div className="App container-fluid">
