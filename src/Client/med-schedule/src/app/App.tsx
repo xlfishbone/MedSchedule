@@ -1,28 +1,20 @@
-import React from "react";
-import logo from "../assets/img/logo.svg";
-import "./App.scss";
+import React from 'react';
+import './App.scss';
+import {SideNavBar} from './layout/SideNavBar';
+import {PageWrapper} from './layout/PageWrapper';
+import {Footer} from './layout/Footer';
+import {Header} from './layout/Header';
+import {MainContent} from './layout/MainContent';
 
 const App = () => {
   return (
-    <div className="App container-fluid">
-      <div className="row">
-        <div className="col-sm-12"></div>
-      </div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <p>How bout I do </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <SideNavBar></SideNavBar>
+      <PageWrapper>
+        <Header></Header>
+        <MainContent></MainContent>
+        <Footer></Footer>
+      </PageWrapper>
     </div>
   );
 };
