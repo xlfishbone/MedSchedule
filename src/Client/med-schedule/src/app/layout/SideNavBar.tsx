@@ -1,4 +1,8 @@
 import React, {FunctionComponent} from 'react';
+import {Link} from 'react-router-dom';
+import {Dropdown} from 'react-bootstrap';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faThLarge} from '@fortawesome/free-solid-svg-icons';
 
 interface NavBarProps {}
 
@@ -25,14 +29,15 @@ export const SideNavBar: FunctionComponent<NavBarProps> = props => (
           <div className="logo-element">IN+</div>
         </li>
         <li>
-          <a href="index.html">
-            <i className="fa fa-th-large"></i> <span className="nav-label">Main view</span>
-          </a>
+          <Link className="nav-label" to="/employees">
+            <FontAwesomeIcon className="mr-2" icon={faThLarge} /> Employees
+          </Link>
         </li>
         <li className="active">
-          <a href="minor.html">
-            <i className="fa fa-th-large"></i> <span className="nav-label">Minor view</span>{' '}
-          </a>
+          <Link className="nav-label" to="/">
+            <FontAwesomeIcon className="mr-2" icon={faThLarge} />
+            Example
+          </Link>
         </li>
       </ul>
     </div>

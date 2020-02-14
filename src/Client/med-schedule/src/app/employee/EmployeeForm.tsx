@@ -3,7 +3,7 @@ import {Widget} from '../layout/Widget';
 import {Form, Button} from 'react-bootstrap';
 
 export interface EmployeeFormProps {
-  message: string;
+
 }
 
 export interface EmployeeFormState {
