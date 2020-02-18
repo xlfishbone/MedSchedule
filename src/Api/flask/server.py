@@ -8,6 +8,7 @@ from auth_error import AuthError
 from autho_security import requires_scope, requires_auth
 from env_utils import set_up_env, env
 from models import db
+from employee_service import *
 
 # ensure we have correct env variables
 set_up_env()
@@ -60,6 +61,20 @@ def private_scoped():
         "code": "Unauthorized",
         "description": "You don't have access to this resource"
     }, 403)
+
+
+@medSched.route("/api/employee/:id")
+@requires_auth
+def get_single_employee(id):
+    if id > 0:
+        return jsonify(get_employee(id))
+    else:
+        return jsonify({})
+
+@medSched.route("/api/employee/")
+@requires_auth
+def get_all_employees():
+    return jsonify(get_all_employees())
 
 
 if __name__ == "__main__":

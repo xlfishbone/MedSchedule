@@ -5,28 +5,27 @@ import {PageWrapper} from './layout/PageWrapper';
 import {Footer} from './layout/Footer';
 import {Header} from './layout/Header';
 import {MainContent} from './layout/MainContent';
-import { Switch, Route } from 'react-router-dom';
-import { EmployeeForm } from './employee/EmployeeForm';
-import { ExampleScreen } from './example/ExampleScreen';
+import {Switch, Route} from 'react-router-dom';
+import {EmployeeForm} from './employee/EmployeeForm';
+import {ExampleScreen} from './example/ExampleScreen';
 
 const App = () => {
   return (
     <div id="wrapper">
-      <SideNavBar></SideNavBar>
+      <SideNavBar />
       <PageWrapper>
-        <Header></Header>
+        <Header />
         <MainContent>
-          {/* this is where I want my stuff to go */}
           <Switch>
             <Route path="/employees">
-              <EmployeeForm />
+              <EmployeeForm employeeId={1} />
             </Route>
             <Route path="/">
               <ExampleScreen />
             </Route>
           </Switch>
         </MainContent>
-        <Footer></Footer>
+        <Footer />
       </PageWrapper>
     </div>
   );

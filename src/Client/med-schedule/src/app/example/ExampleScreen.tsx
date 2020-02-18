@@ -13,7 +13,7 @@ export const ExampleScreen: FunctionComponent = props => (
         <div className="ibox-title">
           <h5>Panel example</h5>
           <div className="ibox-tools">
-            <a className="collapse-link" href="">
+            <a className="collapse-link" href='#'>
               <i className="fa fa-chevron-up"></i>
             </a>
             <a className="dropdown-toggle" data-toggle="dropdown" href="#">
